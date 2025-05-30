@@ -1,4 +1,4 @@
-current_weather = input("What's the weather like today? (sunny/rainy/cold):")
+weather = input("What's the weather like today? (sunny/rainy/cold):")
 
 # Provide Clothing Recommendations:
 # Based on the user’s input, your program will recommend different types of clothing:
@@ -8,11 +8,11 @@ current_weather = input("What's the weather like today? (sunny/rainy/cold):")
 # Include an else statement that handles unexpected input by printing: Sorry, I don't have recommendations for this weather.
 
 # Print the clothing recommendation based on the weather condition provided by the user.
-if current_weather == "sunny":
+if weather == "sunny":
     print("Wear a t-shirt and sunglasses")
-elif current_weather == "rainy":
+elif weather == "rainy":
     print("Don't forget your umbrella and a raincoat") 
-elif current_weather == "cold":
+elif weather == "cold":
     print("Make sure to wear a warm coat and scarf")  
 else:
     print("Sorry, I don't have recommendations for this weather")     

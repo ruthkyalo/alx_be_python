@@ -9,15 +9,15 @@ def main():
     shopping_list = []
     while True:
         display_menu()
-        choice = input("Enter your choice: ").strip()
+        choice = input("Enter your choice: ")
 
         if choice == '1':
-            item_name = input("What is the item name? ").strip()
+            item_name = input("Enter the item to add: ")
             shopping_list.append(item_name)
             print("Updated shopping list:", shopping_list)
 
         elif choice == '2':
-            item_name = input("What is the item name to remove? ").strip()
+            item_name = input("Enter the item to remove: ")
             if item_name not in shopping_list:
                 print("The item is not found.")
             else:
@@ -25,12 +25,9 @@ def main():
                 print(f"Removed '{item_name}'. Updated list:", shopping_list)
 
         elif choice == '3':
-            if shopping_list:
-                print("Current shopping list:")
-                for item in shopping_list:
-                    print("-", item)
-            else:
-                print("The shopping list is empty.")
+            print("Current shopping list:")
+            for item in shopping_list:
+                print(item)
 
         elif choice == '4':
             print("Goodbye!")
